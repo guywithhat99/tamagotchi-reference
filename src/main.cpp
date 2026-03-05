@@ -18,7 +18,7 @@ PetConfig config;
 void setup() {
     // Customise your pet (try changing these values!)
     // config.decayRate      = 1;      // how much stats drop each tick
-    // config.decayInterval  = 10000;  // ms between decay ticks (lower = harder)
+    // config.decayInterval  = 30000;  // ms between decay ticks (lower = harder)
     // config.feedAmount     = 20;     // how much food one press gives
     // config.drinkAmount    = 20;     // how much water one press gives
     // config.exerciseCap    = 30;     // max energy from one mash session
