@@ -25,6 +25,7 @@ void setup() {
     // config.alertThreshold = 30;     // stat level that triggers alerts
 
     Serial.begin(115200);
+    delay(1500);  // give USB serial time to connect before first print
     Serial.println("Pet alive!");
 
     pet.begin(config);
@@ -45,7 +46,7 @@ void loop() {
 
     if (green && !lastGreen) {
         pet.say("MASH IT!");
-        int presses = buttonMash(19, 3000);
+        int32_t presses = buttonMash(19, 3000);
         pet.exercise(presses);
     }
 
@@ -53,4 +54,5 @@ void loop() {
     readButtons(pet);  // ← STEP 1
     pet.update();
     delay(50);
+    Serial.println("tick");
 }

@@ -84,11 +84,8 @@ private:
     void   _decayAll();
     void   _redraw();
     void   _drawSprite(Mood m);
-    void   _drawStatBars();
     void   _drawIndicators();
     void   _showMessage(String msg);
     void   _drawText(String msg);
     void   _clearTextZone();
-
-    int _prevFood, _prevWater, _prevEnergy;
 };

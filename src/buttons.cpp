@@ -6,6 +6,7 @@
 #include "buttons.h"
 #include "sound.h"
 #include "leds.h"
+#include "simon.h"
 
 const int PIN_BTN_RED    = 22;
 const int PIN_BTN_YELLOW = 21;
