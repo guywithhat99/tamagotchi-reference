@@ -51,8 +51,8 @@ void readButtons(Pet& pet) {
     }
 
     if (green && !lastGreen) {
-        Serial.print("Green — mood: "); Serial.println((int)pet.mood());
-        pet.say(pet.catchphrase());
+        Serial.print("Green — water: "); Serial.println(pet.water);
+        pet.drink();
         chirp(pet.mood());
     }
 
